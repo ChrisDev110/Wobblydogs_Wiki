@@ -1,0 +1,172 @@
+body {
+    overflow-x: hidden;
+    background-color: rgb(50, 150, 255);
+    background-image: url("images/myBG.png");
+    background-size: 10vh;
+    animation: bgAnim 6s linear infinite;
+}
+
+@keyframes bgAnim {
+    0% {
+        background-position: 0vw 0vw;
+    }
+
+    100% {
+        background-position: 10vh 10vh;
+    }
+}
+
+#middleThing {
+    position: absolute;
+    left: calc(50vw - 50vh);
+    top: 0;
+    width: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255,255,255, .2);
+}
+
+.defaultText {
+    color: white;
+    text-shadow: 0 .5vh rgba(0,0,0,.2);
+    pointer-events: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#pageTitle {
+    position: absolute;
+    left: calc(50vw - 50vh);
+    top: 2vh;
+    width: 100vh;
+    text-align: center;
+    font-size: 6vh;
+}
+
+#tabs {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 85%;
+    top: 11vh;
+}
+
+.tabTab {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+    background-color: rgba(255,255,255,.15);
+}
+
+.tabTab:hover {
+    background-color: rgba(255,255,255,.25);
+    cursor: pointer;
+}
+
+.tabIcon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: .25vh;
+    top: 2.5%;
+    width: 11.5vh;
+    height: 95%;
+    background-size: 11.5vh 100%;
+    border-radius: 100%;
+}
+
+.tabText {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 4vh;
+    left: 13.5vh;
+    top: -7.7vh;
+}
+
+.page {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+}
+
+.closeButton {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 1vh;
+    top: 1vh;
+
+    width: 10vh;
+    height: 10vh;
+    background-color: rgb(255,0,0);
+}
+
+.closeButton:hover {
+    background-color: rgb(255,75,75);
+}
+
+.closeButton div {
+    position: relative;
+    top: 1vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 7vh;
+}
+
+.emptyThing {
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    margin: 0;
+    padding: 0;
+    z-index: -10;
+}
+
+.emptyText {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 3vh;
+    font-weight: 600;
+    text-shadow: 0 .3vh rgba(0,0,0,.2);
+}
+
+.emptyImage {
+    position: relative;
+    width: 12vh;
+    height: 12vh;
+    margin: 0;
+    padding: 0;
+    background-size: 12vh 12vh;
+}
+
+.sepText {
+    position: relative;
+    width: 100%;
+    height: 4.2vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 3.5vh;
+    background-color: rgba(0,0,0,.05);
+}
+
+.pattern {
+    width: 25vh; 
+    height: 17vh; 
+    left: calc(50% - 12.5vh);
+    background-size: 25vh 17vh; 
+    background-color: black;
+}
